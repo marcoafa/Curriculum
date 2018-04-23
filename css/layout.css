@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*CSS CONTENT BLOCKS*/
+body {
+  height: 100vh;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content:space-around;
+  font-family: monospace;
+  background-color:silver;
+}
+  
+.curriculum {
+  display:flex;
+  height:90vh;
+  width:80%;
+  background-color:white;
+  box-shadow: -20px 20px 25px 2px gray;
+}
+  
+/*CSS CONTENT PERSONAL INFO*/
+.curriculum_personalInfo {
+  margin-left:5%;
+  height:100%;
+  width:20%;
+  background-color:rgba(0, 0, 0, 0.8);;
+  font-size: 16px;
+}
+  
+.curriculum_profesionalinfo {
+  height:100%;
+  width:75%;
+  background-color:white;
+  font-size:20px;
+}
+
+  .curriculum_profesionalinfo hr {
+    display: block;
+    height:5px;
+    border: 0;
+    padding: 0;
+    border-radius: 40%;
+    background-image: -webkit-linear-gradient(left, black, black, #f0f0f0);
+  }
+  .curriculum_profesionalinfo h2{
+    font-size:1.2em;
+    font-weight: bold;
+    text-align:left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .curriculum_profesionalinfo hr{
+    margin:0px 100px;
+    font-size:1.2em;
+    font-weight: bold;
+    text-align:left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  
+  .curriculum_profesionalinfo h3 {
+    padding:5px 100px 10px 100px;
+    font-size:1.1em;
+    text-shadow:1px solid black;
+    text-align:left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px lightgrey;
+  }
+
+/*CSS CONTENT IDENTITY INFO*/
+.identity {
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content:space-around;
+  height: 40%;
+  width:100%;
+}
+  
+  .identity > img {
+    width:160px;
+    height:150px;
+  }
+  
+.identity__name {
+  width:80%;
+  display:block;
+  text-align:center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color:white;
+  text-shadow: 2px 2px black;
+  font-weight:bold;
+  font-size:1em;
+}
+  
+.identity__ocupation {
+  display:block;
+  text-align:center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color:silver;
+  text-shadow: 1px 1px ligthgray;
+  font-size:1em;
+}
+  
+/*CSS SKILLS BLOCK*/
+.skills {
+  width:100%;
+  height:55%;
+}
+  
+.skills__tittle {
+  display:block;
+  width:80%;
+  margin:0px 10%;
+  text-align:center;
+  color:white;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:1.2em;
+}
+
+.skills__box { 
+  width:80%;
+  margin:5% 10%;
+}
+
+  .skills__box > p {
+    color:white;
+    text-transform:uppercase;
+    margin:0 0 5%;
+    letter-spacing:2px;
+    font-size:1em;
+  }
+  
+.skills__box p:nth-child(2) {
+  float:right;
+  position:relative;
+  top: -30px;    
+}
+
+.skills__fullbar {
+  background:black;
+  padding:4px;
+  border-radius:2px;    
+}
+  
+.skills__levelbar {
+  background:white;
+  width:100%;
+  height:5px;  
+}
+
+/*CSS SOCIAL BLOCK*/
+.socialNetworks {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  margin:auto;
+  height: 5%;
+  width:100%;
+}
+  
+  .socialNetworks > .fa {
+    font-size:1.5em;
+    color: whitesmoke;
+  }
+  
+/*CSS EXPERIENCE BLOCK*/
+.experience {
+  width:100%;
+  height:40%;
+  overflow: auto;
+  
+}
+  .experience h2 {
+    padding:0px 100px 0px 100px;
+    line-height: 1.5em;
+  }
+
+.experience__text {
+  padding:0px 120px 0px 120px;
+  font-size:1em;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+  .experience__text > p {
+    padding:3px 0px;
+  }
+  
+/*CSS EDUCATION BLOCK*/
+.education {
+  width:100%;
+  height:20%;
+ 
+}
+  .education h2 {
+    padding:0px 100px 0px 100px;
+    line-height: 1.5em;
+  }
+.education__text {
+  padding:0px 120px 0px 120px;
+  font-size:1em;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+  .education__text > p {
+    padding:5px 0px;
+  }
+
+/*CSS ABILITIES BLOCK*/
+.abilities {
+  width:100%;
+  height:40%;
+  overflow: auto;
+  
+}
+  .abilities h2 {
+    padding:0px 100px 10px 100px;
+
+  }
+.abilities_box {
+  display:flex;
+  padding:10px 100px 10px 100px;
+}
+
+  .abilities_box > i {
+    padding-right:20px;
+    font-size: 1em;
+  }
+  
+
+/* MEDIA QUERYS FOR CELLPHONES*/
+@media only screen 
+  and (min-width: 360px)
+  and (max-width: 500px) {
+    body {
+      height: 100vh;
+      display:flex;
+      align-items:center;
+      font-family: "Century Gothic";
+      background-color:silver;
+    }
+
+    .curriculum {
+      display:flex;
+      height:100vh;
+      width:100%;
+      flex-flow: row wrap;
+      background-color:white;
+    }
+
+    .curriculum_personalInfo {
+      margin-left: 0%;
+      height:100%;
+      width:100%;
+      background-color:rgba(0, 0, 0, 0.8);;
+      font-size: 15px;
+    }
+
+    .curriculum_profesionalinfo {
+      height:100%;
+      width:100%;
+      background-color:white;
+      font-size:16px;
+    }
+
+    .experience {
+      height:100%;
+      background-color:white;
+    }
+    
+    .education {
+      height:100%;
+      background-color:white;
+    }
+
+    .abilities {
+      height:100%;
+      background-color:white;
+    }
+    /* IMAGE OF THE PICTURE*/
+    .identity > img {
+      width:120px;
+      height:100px;
+    }
+    .curriculum_profesionalinfo h2 {
+      padding: 25px 50px 5px 50px;
+    }
+    .curriculum_profesionalinfo h3 {
+      padding: 5px 50px 5px 50px;
+    }
+    .experience__text {
+      padding: 0px 60px 5px 60px;
+    }
+    .curriculum_profesionalinfo hr {
+      margin: 0px 50px;
+    } 
+    .education__text {
+      padding: 5px 60px 5px 60px;
+    }
+    .abilities_box {
+      display: flex;
+      padding: 5px 50px 5px 50px;
+    }
+}
+
+/* MEDIA QUERYS FOR CELLPHONES*/
+@media only screen 
+  and (min-width: 600px)
+  and (max-width: 800px) {
+    body {
+      height: 100vh;
+      display:flex;
+      align-items:center;
+      font-family: "Century Gothic";
+      background-color:silver;
+    }
+
+    .curriculum {
+      display:flex;
+      height:100vh;
+      width:100%;
+      flex-flow: row wrap;
+      background-color:white;
+    }
+
+    .curriculum_personalInfo {
+      margin-left: 0%;
+      height:100%;
+      width:100%;
+      background-color:rgba(0, 0, 0, 0.8);;
+      font-size: 15px;
+    }
+
+    .curriculum_profesionalinfo {
+      height:100%;
+      width:100%;
+      background-color:white;
+      font-size:16px;
+    }
+
+    .experience {
+      height:100%;
+      background-color:white;
+    }
+    
+    .education {
+      height:100%;
+      background-color:white;
+    }
+
+    .abilities {
+      height:100%;
+      background-color:white;
+    }
+    /* IMAGE OF THE PICTURE*/
+    .identity > img {
+      width:130px;
+      height:100px;
+    }
+    /*CSS SKILLS BLOCK*/
+    .skills {
+      width:100%;
+      height:55%;
+      overflow: auto
+    }
+  
+
+}
+
+
+/* MEDIA QUERYS FOR TABLETS*/
+@media only screen 
+  and (min-width: 740px)
+  and (max-width: 800px) {
+    body {
+      height: 100vh;
+      display:flex;
+      align-items:center;
+      font-family: "Century Gothic";
+      background-color:silver;
+    }
+
+    .curriculum {
+      display:flex;
+      height:100vh;
+      width:100%;
+      flex-flow: row wrap;
+      background-color:white;
+    }
+
+    .curriculum_personalInfo {
+      margin-left: 0%;
+      height:100%;
+      width:100%;
+      background-color:rgba(0, 0, 0, 0.8);;
+      font-size: 24px;
+    }
+
+    .curriculum_profesionalinfo {
+      height:100%;
+      width:100%;
+      background-color:white;
+      font-size:25px;
+    }
+
+    .experience {
+      height:100%;
+      background-color:white;
+    }
+    
+    .education {
+      height:100%;
+      background-color:white;
+    }
+
+    .abilities {
+      height:100%;
+      background-color:white;
+    }
+    /* IMAGE OF THE PICTURE*/
+    .identity > img {
+      width:200px;
+      height:200px;
+    }
+    /*CSS SKILLS BLOCK*/
+    .skills {
+      width:100%;
+      height:55%;
+      overflow: auto
+    }
+
+}
+
+@media only screen 
+  and (min-width: 805px)
+  and (max-width: 1100px) {
+    body {
+      height: 100vh;
+      display:flex;
+      align-items:center;
+      font-family: "Century Gothic";
+      background-color:silver;
+    }
+
+    .curriculum {
+      display:flex;
+      height:100vh;
+      width:100%;
+      flex-flow: row wrap;
+      background-color:white;
+    }
+
+    .curriculum_personalInfo {
+      margin-left: 0%;
+      height:100%;
+      width:100%;
+      background-color:rgba(0, 0, 0, 0.8);;
+      font-size: 24px;
+    }
+
+    .curriculum_profesionalinfo {
+      height:100%;
+      width:100%;
+      background-color:white;
+      font-size:25px;
+    }
+
+    .experience {
+      height:100%;
+      background-color:white;
+    }
+    
+    .education {
+      height:100%;
+      background-color:white;
+    }
+
+    .abilities {
+      height:100%;
+      background-color:white;
+    }
+    /* IMAGE OF THE PICTURE*/
+    .identity > img {
+      width:200px;
+      height:200px;
+    }
+    /*CSS SKILLS BLOCK*/
+    .skills {
+      width:100%;
+      height:55%;
+      overflow: auto
+    }
+
+}
+
+@media only screen
+  and (min-width: 1110px)
+  and (max-width:1400px)
+  {
+    .curriculum {
+      display:flex;
+      height:95vh;
+      width:95%;
+      background-color:white;
+      box-shadow: -20px 20px 25px 2px gray;
+    }
+    /* IMAGE OF THE PICTURE
+    .identity > img {
+      width:40%;
+      height:40%;
+    }
+    */
+  }
+ 
+
