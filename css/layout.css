@@ -37,6 +37,7 @@ body {
   width:75%;
   background-color:white;
   font-size:20px;
+  padding:20px 100px 0px 100px;
 }
 
   .curriculum_profesionalinfo hr {
@@ -55,7 +56,6 @@ body {
     letter-spacing: 2px;
   }
   .curriculum_profesionalinfo hr{
-    margin:0px 100px;
     font-size:1.2em;
     font-weight: bold;
     text-align:left;
@@ -65,7 +65,6 @@ body {
   
   
   .curriculum_profesionalinfo h3 {
-    padding:5px 100px 10px 100px;
     font-size:1.1em;
     text-shadow:1px solid black;
     text-align:left;
@@ -176,7 +175,6 @@ body {
   .socialNetworks  .fa:hover {
     color: black;
     transform: scale(1.5);
-    
   }
   
 /*CSS EXPERIENCE BLOCK*/
@@ -184,15 +182,13 @@ body {
   width:100%;
   height:40%;
   overflow: auto;
-  
 }
   .experience h2 {
-    padding:0px 100px 0px 100px;
     line-height: 1.5em;
   }
 
 .experience__text {
-  padding:0px 120px 0px 120px;
+  padding:0px 10px;
   font-size:1em;
   text-align: left;
   line-height: 1.5em;
@@ -209,11 +205,10 @@ body {
  
 }
   .education h2 {
-    padding:0px 100px 0px 100px;
     line-height: 1.5em;
   }
 .education__text {
-  padding:0px 120px 0px 120px;
+  padding:0px 10px;
   font-size:1em;
   text-align: left;
   line-height: 1.5em;
@@ -231,12 +226,11 @@ body {
   
 }
   .abilities h2 {
-    padding:0px 100px 10px 100px;
-
+    line-height: 1.5em;
   }
 .abilities_box {
   display:flex;
-  padding:10px 100px 10px 100px;
+  padding:10px 10px 10px 10px;
 }
 
   .abilities_box > i {
@@ -278,20 +272,21 @@ body {
       width:100%;
       background-color:white;
       font-size:16px;
+      padding: 0;
     }
 
     .experience {
-      height:100%;
+      height:auto;
       background-color:white;
     }
     
     .education {
-      height:100%;
+      height:auto;
       background-color:white;
     }
 
     .abilities {
-      height:100%;
+      height:auto;
       background-color:white;
     }
     /* IMAGE OF THE PICTURE*/
@@ -353,21 +348,25 @@ body {
       width:100%;
       background-color:white;
       font-size:16px;
+      padding: 0;
     }
 
     .experience {
-      height:100%;
+      height:auto;
       background-color:white;
+      padding:15px 30px;
     }
     
     .education {
-      height:100%;
+      height:auto;
       background-color:white;
+      padding:15px 30px;
     }
 
     .abilities {
-      height:100%;
+      height:auto;
       background-color:white;
+      padding:15px 30px;
     }
     /* IMAGE OF THE PICTURE*/
     .identity > img {
@@ -380,8 +379,6 @@ body {
       height:55%;
       overflow: auto
     }
-  
-
 }
 
 
@@ -418,20 +415,21 @@ body {
       width:100%;
       background-color:white;
       font-size:25px;
+      padding: 0;
     }
 
     .experience {
-      height:100%;
+      height:auto;
       background-color:white;
     }
     
     .education {
-      height:100%;
+      height:auto;
       background-color:white;
     }
 
     .abilities {
-      height:100%;
+      height:auto;
       background-color:white;
     }
     /* IMAGE OF THE PICTURE*/
@@ -480,21 +478,25 @@ body {
       width:100%;
       background-color:white;
       font-size:25px;
+      padding: 0;
     }
 
     .experience {
-      height:100%;
+      height:auto;
       background-color:white;
+      padding:45px 60px;
     }
     
     .education {
-      height:100%;
+      height:auto;
       background-color:white;
+      padding:45px 60px;
     }
 
     .abilities {
-      height:100%;
+      height:auto;
       background-color:white;
+      padding:45px 60px;
     }
     /* IMAGE OF THE PICTURE*/
     .identity > img {
@@ -521,7 +523,8 @@ body {
       background-color:white;
       box-shadow: -20px 20px 25px 2px gray;
     }
-    
   }
+  
+
  
 
